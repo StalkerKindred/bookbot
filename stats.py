@@ -1,6 +1,3 @@
-
-book_path = "books/frankenstein.txt"
-
 letter_dic = {}
 
 def get_book_text(path):

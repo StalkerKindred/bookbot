@@ -1,10 +1,17 @@
 #python3 main.py im lazy af
+import sys
+if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>")
+    print("Books: frankenstein, mobydick, prideandprejudice")
+    print("Paths: books/book.txt")
+    sys.exit(1)
+
+book_path = sys.argv[1]
+
 from stats import get_book_text
 from stats import get_word_count
 from stats import get_letter_count
 from stats import sorting
-
-book_path = "books/frankenstein.txt"
 
 letter_dic = {}
 
